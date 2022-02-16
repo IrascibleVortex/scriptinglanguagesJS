@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION-6</title>
+</head>
+<body>
+    <form action="">
+        1st number: <input type="number" id="inp1">
+        2nd number: <input type="number" id="inp2">
+    </form>
+
+    <button id="btn1">ADD</button>
+    <button id="btn2">MULTIPLY</button>
+
+    <p id="p1"></p>
+    <script>
+
+        
+        document.querySelector("#btn1").addEventListener("click", add);
+        document.querySelector("#btn2").addEventListener("click", mul);
+
+        function add() {
+            let num1 = document.querySelector("#inp1").value;
+            let num2 = document.querySelector("#inp2").value;
+            document.querySelector("#p1").innerHTML = parseInt(num1) + parseInt(num2);
+        }
+
+        function mul(){
+            let num1 = document.querySelector("#inp1").value;
+            let num2 = document.querySelector("#inp2").value;
+            document.querySelector("#p1").innerHTML = num1 * num2;
+        }
+    </script>
+
+</body>
+</html>
